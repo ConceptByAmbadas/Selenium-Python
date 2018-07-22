@@ -1,8 +1,8 @@
 from _datetime import date, datetime
-import unittest
 import datetime
-import time
 import os
+import time
+import unittest
 
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
@@ -16,7 +16,7 @@ class TestBase(unittest.TestCase):
         
         
     @staticmethod 
-    def start_browser(browsername,baseURL="E:\HTML_Pages\Registration.html"):
+    def start_browser(self,browsername,baseURL="E:\HTML_Pages\Registration.html"):
         print("browser name is:"+browsername)
       
         if browsername=='chrome':
