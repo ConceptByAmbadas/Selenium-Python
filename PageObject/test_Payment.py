@@ -22,7 +22,7 @@ class Payment(TestBase):
         "popup_ok":(By.ID,"popup_ok")
         
         }    
-    def do_payment(self,cust_name,Sorce_acc,Dest_acc,amount,username,password):
+    def test_do_payment(self,cust_name,Sorce_acc,Dest_acc,amount,username,password):
        
         self.select_element_from_dropdown(*self.locator_dictionary['source_bank']).select_by_visible_text("HDFC")
         self.select_element_from_dropdown(*self.locator_dictionary['Dest_bank']).select_by_visible_text("SBI")        

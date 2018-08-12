@@ -35,7 +35,7 @@ class Registration(TestBase):
         
     
     #def do_Registraion(self,phone,address,city,zip,username,password,description):
-    def do_Registraion(self,first_name,last_name,email,phone,address,city,zip,username,password,description):
+    def test_do_Registraion(self,first_name,last_name,email,phone,address,city,zip,username,password,description):
         
         self.select_element_from_dropdown(*self.locator_dictionary['title']).select_by_value("Mr.")
         self.find_element(*self.locator_dictionary['first_name']).send_keys(first_name)
